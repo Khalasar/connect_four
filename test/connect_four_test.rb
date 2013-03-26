@@ -28,7 +28,7 @@ class ConnectFourTest < ConnectFourSpec
   def test_is_winner
     playing_area = ConnectFour.create_playing_area
     player1 = ConnectFour.add_player('x')
-    player2 = ConnectFour.add_player('o')
+    #player2 = ConnectFour.add_player('o')
     ConnectFour.action(player1,2)                       # player(x) place a x in column 2
     ConnectFour.action(player1,3)
     ConnectFour.action(player1,4)
@@ -40,5 +40,6 @@ class ConnectFourTest < ConnectFourSpec
     assert_equal false, ConnectFour.check_action(9)
 
   end
+
 
 end

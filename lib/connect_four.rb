@@ -1,7 +1,7 @@
 module ConnectFour
 
-  require './player'
-  #require 'player'
+  #require './player'
+  require 'player'
 
   # invoke this method to start the game
   def self.start_game
@@ -162,6 +162,6 @@ module ConnectFour
     winner
   end
 
-  start_game
+  #start_game
 
 end
